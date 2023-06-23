@@ -1,216 +1,170 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.101.0">
-    <title>Blog luna</title>
+    <titl</title>
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+</head>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/blog/">
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-success">
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="carousel/index.html">Equipe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product/index.html">Trabalho</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog/index.html">Diário</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-    
+    <main role="main">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <!-- Primeiro slide - 1º do Ensino Médio do SESI -->
+                <div class="carousel-item active">
+                    <img src="img/sesiii.png" class="bd-placeholder-img" width="100%" height="100%" />
+                    
+                    <div class="container">
+                        <div class="carousel-caption text-left">
+                            
+                            <p><a class="btn btn-lg btn-info" href="#">Saiba mais</a></p>
+                        </div>
+                    </div>
+                </div>
 
-    <!-- Bootstrap core CSS -->
-<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+                
+                        
+                    
+                
 
+                <!-- Terceiro slide - 3º do Ensino Médio do SESI -->
+                <div class="carousel-item">
+                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                        role="img" aria-label=" :  " preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title> </title>
+                        <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">
+                        </text>
+                    </svg>
+                    <div class="container">
+                        <div class="carousel-caption text-left">
+                            <h1>3º do Ensino Médio do SESI</h1>
+                            <p>colegio sesi da industria de apucarana.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">Saiba mais</a></p>
+                        </div>
+                    </div>
+                </div>
+                < </div>
+                    <button class="carousel-control-prev" type="button" data-target="#myCarousel" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-target="#myCarousel" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </button>
+            </div>
+            <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-success text-white">
+                <div class="col-md-5 mx-auto">
+                    <h1 class="display-4 font-weight-normal">Colégio SESI </h1>
+                    <p class="lead">O colegio sesi da industria oferece um metudo diferenciado para preparar os jovens para o futuro </p>
+                    <a class="btn btn-primary" href="#">Saiba mais</a>
+                </div>
+            </div>
 
-
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-
-    
-    <!-- Custom styles for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="blog.css" rel="stylesheet">
-  </head>
-  <body>
-    
-<div class="container">
-  <header class="blog-header py-3">
-    <div class="row flex-nowrap justify-content-between align-items-center">
-      <div class="col-4 pt-1">
-        <a class="text-muted" href="#">Subscribe</a>
-      </div>
-      <div class="col-4 text-center">
-        <a class="blog-header-logo text-dark" href="#">Large</a>
-      </div>
-      <div class="col-4 d-flex justify-content-end align-items-center">
-        <a class="text-muted" href="#" aria-label="Search">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24" focusable="false"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
-        </a>
-        <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
-      </div>
-    </div>
-  </header>
-
-  <div class="nav-scroller py-1 mb-2">
-    <nav class="nav d-flex justify-content-between">
-      <a class="p-2 text-muted" href="#">World</a>
-      <a class="p-2 text-muted" href="#">U.S.</a>
-      <a class="p-2 text-muted" href="#">Technology</a>
-      <a class="p-2 text-muted" href="#">Design</a>
-      <a class="p-2 text-muted" href="#">Culture</a>
-      <a class="p-2 text-muted" href="#">Business</a>
-      <a class="p-2 text-muted" href="#">Politics</a>
-      <a class="p-2 text-muted" href="#">Opinion</a>
-      <a class="p-2 text-muted" href="#">Science</a>
-      <a class="p-2 text-muted" href="#">Health</a>
-      <a class="p-2 text-muted" href="#">Style</a>
-      <a class="p-2 text-muted" href="#">Travel</a>
-    </nav>
-  </div>
-
-  <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
-    <div class="col-md-6 px-0">
-      <h1 class="display-4 font-italic">conhecendo um pouco de mim</h1>
-      <p class="lead my-3">um pouco dos meus hobbies favoritos .</p>
-      <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
-    </div>
-  </div>
-
-  <div class="row mb-2">
-    <div class="col-md-6">
-      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-primary">jogar</strong>
-          <h3 class="mb-0">eu amo jogar jogos</h3>
-          <div class="mb-1 text-muted"></div>
-          <p class="card-text mb-auto">video game jogos de cell jogos de tabuleiro .</p>
-          <a href="#" class="stretched-link"></a>
-        </div>
-        <div class="col-auto d-none d-lg-block">
-          <img class="bd-placeholder-img" width="200" height="250" src="img/foto1.jpg" />          
-
-        </div>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col-auto d-none d-lg-block">
-          <img src="img/livro.jpg" class="bd-placeholder-img" width="200" height="250"  />
-        </div>
-        <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-success">ler</strong>
-          <h3 class="mb-0">gosto muito de ler minha biblia e livros ação ficticia </h3>
-          <div class="mb-1 text-muted"></div>
-          <p class="mb-auto">diario de um banana .</p>
-          <a href="#" class="stretched-link"></a>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-</div>
-
-<main role="main" class="container">
-  <div class="row">
-    <div class="col-md-8 blog-main">
-      <h3 class="pb-4 mb-4 font-italic border-bottom">
-        From the Firehose
-      </h3>
-
-      <div class="blog-post">
-        <h2 class="blog-post-title">luna</h2>
-        
-
-        <p>meu nome é luana mas sou mais conhecida como luna  eu nasci em 2006.</p>
-        <hr>
-        <p>eu amo dançar gosto de kpop ler minha biblia jogar video games andar de skate,minha comida favorita é pizza e minha sobremesa favorita é sorvete.</p>
-        <blockquote>
-          <p>assistir performances de dança . <strong>comer sobremesa </strong>. assistir filmes .</p>
-        </blockquote>
-        <h2>filmes</h2>
-        <p>homen aranha no way home,os sem floresta,  a origem dos guardioes.</p>
-        
-        <h3>Eu cozinhando </h3>
-        <p> desastre total  minhas  comidas favoritas.</p>
-        <ul>
-          <li>pizza .</li>
-          <li>lasanha.</li>
-          <li>stroognoof </li>
-        </ul>sobremesas favoritas  
-        <p></p>
-        <ol>
-          <li>sorvete .</li>
-          <li>chocolate.</li>
-          <li>bolo de cenoura.</li>
-        </ol>
-      </div><!-- /.blog-post -->
-
-      <div class="blog-post">
-        <h2 class="blog-post-title"></h2>
-        <p class="blog-post-meta"><a href="#"></a></p>
-
-        <p> <a href="#">
-        <blockquote></blockquote>
-        </blockquote>
-      </div><!-- /.blog-post -->
-
-      <div class="blog-post">
-        <h2 class="blog-post-title"></h2>
-        <p class="blog-post-meta">23nov2006<a href="#">luna</a></p>
-
-        <p>paises que pretendo visitar </p>
-        <ul>
-          <li>coreia.</li>
-          <li>eua .</li>
-          <li>pariz.</li>
-        </u>
-      </div><!-- /.blog-post -->
-
-      
-
-    </div><!-- /.blog-main -->
-
-    <aside class="col-md-4 blog-sidebar">
-      <div class="p-4 mb-3 bg-light rounded">
-        <h4 class="font-italic">About luna </h4>
-        
-      </div>
-
-      <div class="p-4">
-        <h4 class="font-italic">a girl dreamer </h4>
-        <ol class="list-unstyled mb-0">
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          
-        </ol>
-      </div>
-
-      <i>
-        </ol>
-      </div>
-    </aside><!-- /.blog-sidebar -->
-
-  </div><!-- /.row -->
-
-</main><!-- /.container -->
-
-<footer class="blog-footer">
-  
-  <p>
-    <a href="#"></a>
-  </p>
-</footer>
+            <div class="container marketing">
+                <hr class="featurette-divider">
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">oferece tambem diversas variedades de cursos gratuidos  <span class="text-muted">Saiba-maiss</span>
+                        </h2>
+                        <p class="lead">Ótimos cursos oferecidos pelo SESI. Imagine conteúdos empolgantes aqui.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#">Saiba mais</a></p>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="img/banner.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                        width="500" height="500"/>
+                </div>
+            </div>
 
 
-    
-  </body>
+            <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-primary text-white">
+                <div class="col-md-5 mx-auto">
+                    <h1 class="display-4 font-weight-normal">SESI e SENAI: Parceria de excelência</h1>
+                    <p class="lead font-weight-normal">O SESI e o SENAI uniram forças para transferir uma educação de
+                        qualidade e formação profissional de excelência. Juntos, proporcionamos uma experiência completa
+                        e integrada para o seu desenvolvimento pessoal e profissional.</p>
+                    <a class="btn btn-success" href="#">Saiba mais</a>
+                </div>
+            </div>
+
+            <div class="container marketing">
+                <hr class="featurette-divider">
+                <div class="row featurette">
+                    <div class="col-md-8 order-md-2">
+                        <h2 class="featurette-heading">com aulas de robotica onde os alunos montam e desmontam robos e aprendem sobre o mundo da programação  </h2>
+                        <p class="lead">Veja você mesmo, toda as possiblidades que essa disciplina pode te proporcionar
+                            preparando voce para o mercado de trabalho .</p>
+                        <p><a class="btn btn-lg btn-primary" href="#">Saiba mais</a></p>
+                    </div>
+                    <div class="col-md-4 order-md-1">
+                        
+                    </div>
+                </div>
+
+
+                <hr class="featurette-divider">
+
+
+                <!-- /END THE FEATURETTES -->
+
+            </div><!-- /.container -->
+
+
+            <!-- FOOTER -->
+            <footer class="container">
+                <p class="float-right"><a href="#">Voltar ao topo</a></p>
+                <p>
+                    &copy; 2023 SESI&middot;
+                    <a href="https://www.sesipr.org.br/colegiosesi/unidades/apucarana">Apucarana</a> &middot;
+                </p>
+            </footer>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
 </html>
